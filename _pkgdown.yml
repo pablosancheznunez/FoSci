@@ -3,7 +3,7 @@ url: https://pablosancheznunez.com/FoSci/
 template:
   bootstrap: 5
   bslib:
-    primary: "#8a1c1c"
+    primary: "#7f1d2d"
 
 authors:
   Pablo Sánchez-Núñez:

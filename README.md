@@ -1,4 +1,5 @@
-# FoSci
+# FoSci <img src="man/figures/logo.svg" align="right" height="139" alt="FoSci logo" />
+
 Website: <https://pablosancheznunez.com/FoSci/>
 
 Forensic scientometrics: signals in publication data that may deserve a closer look, kept apart from findings.
