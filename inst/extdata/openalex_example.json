@@ -1,0 +1,150 @@
+{
+ "meta": {
+  "count": 3,
+  "page": 1,
+  "per_page": 25
+ },
+ "results": [
+  {
+   "id": "https://openalex.org/W0000001",
+   "doi": "https://doi.org/10.9999/example.1",
+   "title": "Research on the application of fuzzy clustering algorithm in hospital management based on big data model",
+   "publication_year": 2022,
+   "type": "article",
+   "is_retracted": true,
+   "cited_by_count": 3,
+   "primary_location": {
+    "source": {
+     "id": "https://openalex.org/S0000001",
+     "display_name": "Journal of Fictitious Results",
+     "issn_l": "0000-0000",
+     "host_organization_name": "Example Publisher",
+     "type": "journal"
+    }
+   },
+   "authorships": [
+    {
+     "author_position": "first",
+     "author": {
+      "id": "https://openalex.org/A0000001",
+      "display_name": "Author One",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I0000001",
+       "display_name": "Example Institute I0000001",
+       "ror": "https://ror.org/03ths8210",
+       "country_code": "ES",
+       "type": "education"
+      }
+     ],
+     "countries": [
+      "ES"
+     ],
+     "is_corresponding": true
+    },
+    {
+     "author_position": "last",
+     "author": {
+      "id": "https://openalex.org/A0000002",
+      "display_name": "Author Two",
+      "orcid": null
+     },
+     "institutions": [
+      {
+       "id": "https://openalex.org/I0000002",
+       "display_name": "Example Institute I0000002",
+       "ror": null,
+       "country_code": "FR",
+       "type": "education"
+      }
+     ],
+     "countries": [
+      "FR"
+     ],
+     "is_corresponding": false
+    }
+   ],
+   "referenced_works": [
+    "https://openalex.org/W0000002",
+    "https://openalex.org/W0000003"
+   ],
+   "abstract_inverted_index": {
+    "We": [
+     0
+    ],
+    "apply": [
+     1
+    ],
+    "counterfeit": [
+     2
+    ],
+    "consciousness": [
+     3
+    ],
+    "to": [
+     4
+    ],
+    "records.": [
+     5
+    ]
+   }
+  },
+  {
+   "id": "https://openalex.org/W0000002",
+   "doi": "https://doi.org/10.9999/example.2",
+   "title": "Research on the application of neural network algorithm in campus management based on cloud model",
+   "publication_year": 2022,
+   "type": "article",
+   "is_retracted": false,
+   "cited_by_count": 1,
+   "primary_location": {
+    "source": {
+     "id": "https://openalex.org/S0000001",
+     "display_name": "Journal of Fictitious Results",
+     "issn_l": "0000-0000",
+     "host_organization_name": "Example Publisher",
+     "type": "journal"
+    }
+   },
+   "authorships": [
+    {
+     "author_position": "first",
+     "author": {
+      "id": "https://openalex.org/A0000003",
+      "display_name": "Author Three",
+      "orcid": null
+     },
+     "institutions": [],
+     "countries": [],
+     "is_corresponding": true
+    }
+   ],
+   "referenced_works": [],
+   "abstract_inverted_index": null
+  },
+  {
+   "id": "https://openalex.org/W0000003",
+   "doi": null,
+   "title": "Sediment transport in coastal wetlands",
+   "publication_year": 2019,
+   "type": "article",
+   "is_retracted": false,
+   "cited_by_count": 12,
+   "primary_location": {
+    "source": null
+   },
+   "authorships": [],
+   "referenced_works": [],
+   "abstract_inverted_index": {
+    "Sediment": [
+     0
+    ],
+    "moves.": [
+     1
+    ]
+   }
+  }
+ ]
+}

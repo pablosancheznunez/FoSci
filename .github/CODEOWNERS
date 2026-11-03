@@ -1,0 +1,7 @@
+# Paths whose changes need the maintainer's review: methods, thresholds,
+# dictionaries and expected outputs.
+/R/signals.R @pablosancheznunez
+/R/papermills.R @pablosancheznunez
+/inst/extdata/ @pablosancheznunez
+/tests/ @pablosancheznunez
+/.github/ @pablosancheznunez
