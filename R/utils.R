@@ -2,7 +2,7 @@
 
 utc_now <- function() format(Sys.time(), "%Y-%m-%dT%H:%M:%SZ", tz = "UTC")
 
-# Evidence levels of the metascience vocabulary (vocabulary_version 0.1.0).
+# Evidence levels of the metascience vocabulary (vocabulary_version 0.2.0).
 evidence_levels <- c("signal", "pattern", "documentary", "established")
 
 na_chr <- function(x) if (is.null(x) || length(x) == 0L) NA_character_ else as.character(x[[1]])
