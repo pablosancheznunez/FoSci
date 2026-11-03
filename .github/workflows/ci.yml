@@ -44,3 +44,14 @@ jobs:
           working-directory: .
           args: 'c("--no-manual", "--as-cran")'
           error-on: '"warning"'
+
+  triage:
+    # Diagnoses failures on main and opens an issue; never edits code.
+    needs: [r-package]
+    if: failure() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    uses: pablosancheznunez/research-tools-ops/.github/workflows/failure-triage.yml@main
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    secrets: inherit

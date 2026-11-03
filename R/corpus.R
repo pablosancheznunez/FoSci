@@ -58,7 +58,7 @@ empty_table <- function(cols) {
 
 #' @export
 print.fs_corpus <- function(x, ...) {
-  cat("<forsci corpus> ", nrow(x$works), " works, ", length(unique(x$authorships$author_id)),
+  cat("<FoSci corpus> ", nrow(x$works), " works, ", length(unique(x$authorships$author_id)),
       " authors, ", length(unique(x$works$source_id[!is.na(x$works$source_id)])), " sources, ",
       nrow(x$references), " references\n", sep = "")
   yrs <- range(x$works$year, na.rm = TRUE)
@@ -91,7 +91,7 @@ abstract_text <- function(inv) {
 #' @return An `fs_corpus`.
 #' @export
 #' @examples
-#' path <- system.file("extdata", "openalex_example.json", package = "forsci")
+#' path <- system.file("extdata", "openalex_example.json", package = "FoSci")
 #' fs_normalise_openalex(jsonlite::fromJSON(path, simplifyVector = FALSE))
 fs_normalise_openalex <- function(json, provenance = list(source = "openalex")) {
   pages <- if (!is.null(json$results)) list(json) else json
@@ -170,7 +170,7 @@ fs_collect_openalex <- function(filter, max_works = 1000) {
 get_json <- function(url) {
   h <- curl::new_handle()
   curl::handle_setheaders(h, Accept = "application/json",
-                          `User-Agent` = "forsci R package (https://github.com/pablosancheznunez/forsci)")
+                          `User-Agent` = "FoSci R package (https://github.com/pablosancheznunez/FoSci)")
   res <- curl::curl_fetch_memory(url, handle = h)
   if (res$status_code >= 400) stop("HTTP ", res$status_code, " from ", sub("api_key=[^&]+", "api_key=***", url), call. = FALSE)
   jsonlite::fromJSON(rawToChar(res$content), simplifyVector = FALSE)
@@ -195,7 +195,7 @@ get_json <- function(url) {
 #' @export
 #' @examples
 #' rw <- fs_read_retraction_watch(system.file("extdata", "retraction_watch_example.csv",
-#'                                            package = "forsci"))
+#'                                            package = "FoSci"))
 #' rw
 #' fs_link_retractions(fs_simulate(seed = 1), rw)
 fs_read_retraction_watch <- function(path) {

@@ -1,4 +1,4 @@
-#' forsci: forensic scientometrics
+#' FoSci: forensic scientometrics
 #'
 #' Finds signals in publication data that may deserve a closer look, and keeps
 #' them apart from findings. The workflow:

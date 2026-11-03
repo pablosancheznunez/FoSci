@@ -1,4 +1,4 @@
-# forsci
+# FoSci
 
 Forensic scientometrics: signals in publication data that may deserve a closer look, kept apart from findings.
 
@@ -15,8 +15,8 @@ Status: **prototype**. Methods are validated on a simulated benchmark only; thei
 
 ```r
 # install.packages("remotes")
-remotes::install_github("pablosancheznunez/forsci")
-library(forsci)
+remotes::install_github("pablosancheznunez/FoSci")
+library(FoSci)
 
 x <- fs_collect_openalex("primary_location.source.id:S123,publication_year:2020-2023")
 # or offline, with known outcomes:

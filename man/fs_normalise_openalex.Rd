@@ -20,6 +20,6 @@ Turns one or more parsed responses of the OpenAlex \verb{/works} endpoint (from
 function does not use the network.
 }
 \examples{
-path <- system.file("extdata", "openalex_example.json", package = "forsci")
+path <- system.file("extdata", "openalex_example.json", package = "FoSci")
 fs_normalise_openalex(jsonlite::fromJSON(path, simplifyVector = FALSE))
 }

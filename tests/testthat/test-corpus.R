@@ -1,5 +1,5 @@
 oa <- function() {
-  jsonlite::fromJSON(system.file("extdata", "openalex_example.json", package = "forsci"), simplifyVector = FALSE)
+  jsonlite::fromJSON(system.file("extdata", "openalex_example.json", package = "FoSci"), simplifyVector = FALSE)
 }
 
 test_that("OpenAlex responses normalise into the three tables", {
@@ -31,7 +31,7 @@ test_that("fs_corpus validates its tables", {
 })
 
 test_that("Retraction Watch notices link by DOI, case-insensitively", {
-  rw <- fs_read_retraction_watch(system.file("extdata", "retraction_watch_example.csv", package = "forsci"))
+  rw <- fs_read_retraction_watch(system.file("extdata", "retraction_watch_example.csv", package = "FoSci"))
   expect_equal(rw$reasons[1], "Paper Mill;Concerns/Issues About Data")
   links <- fs_link_retractions(fs_simulate(seed = 1), rw)
   expect_equal(links$work_id, c("W9001", "W9002"))

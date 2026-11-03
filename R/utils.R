@@ -10,7 +10,7 @@ na_int <- function(x) if (is.null(x) || length(x) == 0L) NA_integer_ else as.int
 na_lgl <- function(x) if (is.null(x) || length(x) == 0L) NA else as.logical(x[[1]])
 
 extdata_csv <- function(file) {
-  utils::read.csv(system.file("extdata", file, package = "forsci"), encoding = "UTF-8",
+  utils::read.csv(system.file("extdata", file, package = "FoSci"), encoding = "UTF-8",
                   stringsAsFactors = FALSE)
 }
 

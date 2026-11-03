@@ -1,13 +1,13 @@
 cff-version: 1.2.0
-message: "If you use forsci, please cite it as below."
+message: "If you use FoSci, please cite it as below."
 type: software
-title: "forsci: forensic scientometrics, integrity signals in publication data"
+title: "FoSci: forensic scientometrics, integrity signals in publication data"
 version: 0.0.0.9000
 authors:
   - family-names: "Sánchez-Núñez"
     given-names: "Pablo"
     orcid: "https://orcid.org/0000-0001-7845-9506"
-repository-code: "https://github.com/pablosancheznunez/forsci"
+repository-code: "https://github.com/pablosancheznunez/FoSci"
 license: MIT
 keywords:
   - forensic scientometrics

@@ -38,7 +38,7 @@ except notices of nature "Retraction" whose reasons are stated, which are
 }
 \examples{
 rw <- fs_read_retraction_watch(system.file("extdata", "retraction_watch_example.csv",
-                                           package = "forsci"))
+                                           package = "FoSci"))
 rw
 fs_link_retractions(fs_simulate(seed = 1), rw)
 }

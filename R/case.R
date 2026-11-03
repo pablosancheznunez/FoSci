@@ -116,7 +116,7 @@ fs_case_add_signals <- function(case, signals) {
     claim <- paste0(f$signal[i], " (method ", f$method_version[i], "): ",
                     if (is.na(f$detail[i])) sprintf("observed %.3g, expected %.3g", f$observed[i], f$expected[i]) else f$detail[i])
     case <- fs_case_add(case, f$unit_id[i], claim, f$evidence_level[i],
-                        source = "forsci computation", alternatives = f$alternatives[i],
+                        source = "FoSci computation", alternatives = f$alternatives[i],
                         unit_type = f$unit_type[i])
   }
   case
@@ -124,7 +124,7 @@ fs_case_add_signals <- function(case, signals) {
 
 #' @export
 print.fs_case <- function(x, ...) {
-  cat("<forsci case> ", x$title, "\n  question: ", x$question, "\n", sep = "")
+  cat("<FoSci case> ", x$title, "\n  question: ", x$question, "\n", sep = "")
   if (nrow(x$items)) {
     tab <- table(factor(x$items$evidence_level, evidence_levels))
     cat("  items: ", paste(names(tab), tab, sep = " ", collapse = ", "), "\n", sep = "")
@@ -160,7 +160,7 @@ fs_report <- function(x, path, corpus = NULL, title = NULL) {
     f <- x[x$flagged %in% TRUE, , drop = FALSE]
     items <- data.frame(unit_type = f$unit_type, unit_id = f$unit_id,
                         claim = paste0(f$signal, ": ", ifelse(is.na(f$detail), "", f$detail)),
-                        evidence_level = f$evidence_level, source = "forsci computation",
+                        evidence_level = f$evidence_level, source = "FoSci computation",
                         alternatives = f$alternatives, stringsAsFactors = FALSE)
     title <- title %||% "Integrity signals"
     question <- NA_character_
@@ -189,7 +189,7 @@ fs_report <- function(x, path, corpus = NULL, title = NULL) {
     "<h2>Items</h2><table><tr><th>Unit type</th><th>Unit</th><th>Claim</th><th>Evidence level</th><th>Source</th><th>Alternative explanations</th></tr>",
     rows, "</table>",
     "<h2>Provenance</h2><ul>",
-    "<li>Generated: ", utc_now(), " with forsci ", as.character(utils::packageVersion("forsci")), " on ", html_escape(R.version.string), "</li>",
+    "<li>Generated: ", utc_now(), " with FoSci ", as.character(utils::packageVersion("FoSci")), " on ", html_escape(R.version.string), "</li>",
     if (length(prov)) paste0("<li>Data: ", html_escape(paste(names(prov), unlist(lapply(prov, paste, collapse = ", ")), sep = " = ", collapse = "; ")), "</li>"),
     if (inherits(x, "fs_signals")) paste0("<li>Methods: ", html_escape(paste(unique(paste0(x$signal, "@", x$method_version)), collapse = ", ")), "</li>"),
     "</ul><h2>Limitations</h2><ul>",

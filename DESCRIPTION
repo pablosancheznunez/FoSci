@@ -1,22 +1,24 @@
-Package: forsci
+Package: FoSci
 Title: Forensic Scientometrics: Integrity Signals in Publication Data
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R:
     person("Pablo", "Sánchez-Núñez", email = "psancheznunez@outlook.com",
            role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0001-7845-9506"))
-Description: Detects statistical and textual signals that may deserve a closer
-    look in collections of scientific publications, and documents the
-    evidence behind them: retraction rates, journal-to-journal citation
-    stacking, template titles, tortured phrases and unusual productivity,
-    with a module for paper mill screening. Every result carries an evidence
-    level (signal, pattern, documentary, established) and its alternative
-    explanations; a signal is never presented as proof of misconduct, and
-    individuals are not ranked. Reads OpenAlex responses and the Retraction
-    Watch database, includes a simulated benchmark with known outcomes to
-    validate the methods, and writes reproducible case reports.
+Description: Detects statistical and textual signals that may deserve a
+    closer look in collections of scientific publications, and documents
+    the evidence behind them: retraction rates, journal-to-journal citation
+    stacking, template titles, tortured phrases (Cabanac, Labbe and
+    Magazinov, 2021, <doi:10.48550/arXiv.2107.06751>) and unusual
+    productivity, with a module for paper mill screening. Every result
+    carries an evidence level (signal, pattern, documentary, established)
+    and its alternative explanations; a signal is never presented as proof
+    of misconduct, and individuals are not ranked. Reads 'OpenAlex'
+    <https://openalex.org/> responses and the 'Retraction Watch' database,
+    includes a simulated benchmark with known outcomes to validate the
+    methods, and writes reproducible case reports.
 License: MIT + file LICENSE
-URL: https://github.com/pablosancheznunez/forsci
-BugReports: https://github.com/pablosancheznunez/forsci/issues
+URL: https://github.com/pablosancheznunez/FoSci
+BugReports: https://github.com/pablosancheznunez/FoSci/issues
 Depends:
     R (>= 4.1.0)
 Imports:

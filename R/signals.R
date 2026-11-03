@@ -330,7 +330,7 @@ check_corpus <- function(corpus) {
 #' @export
 print.fs_signals <- function(x, ...) {
   if (!all(c("signal", "flagged") %in% names(x))) return(print(as.data.frame(x), ...))
-  cat("<forsci signals> ", nrow(x), " rows, ", sum(x$flagged, na.rm = TRUE), " flagged\n", sep = "")
+  cat("<FoSci signals> ", nrow(x), " rows, ", sum(x$flagged, na.rm = TRUE), " flagged\n", sep = "")
   if (nrow(x)) {
     tab <- table(x$signal, factor(x$flagged, c(TRUE, FALSE), c("flagged", "not flagged")))
     print(tab)

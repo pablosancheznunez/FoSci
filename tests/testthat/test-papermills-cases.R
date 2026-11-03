@@ -1,7 +1,7 @@
 x <- fs_simulate(seed = 1)
 
 test_that("paper mill screen promotes only converging signals to pattern", {
-  rw <- fs_read_retraction_watch(system.file("extdata", "retraction_watch_example.csv", package = "forsci"))
+  rw <- fs_read_retraction_watch(system.file("extdata", "retraction_watch_example.csv", package = "FoSci"))
   pm <- fs_pm_screen(x, fs_link_retractions(x, rw))
   expect_true(all(pm$evidence_level %in% c("signal", "pattern")))
   expect_equal(pm$evidence_level == "pattern", pm$n_signals >= 2)

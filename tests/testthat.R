@@ -1,4 +1,4 @@
 library(testthat)
-library(forsci)
+library(FoSci)
 
-test_check("forsci")
+test_check("FoSci")
