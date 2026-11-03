@@ -6,3 +6,5 @@
 ^docs$
 ^README\.md$
 ^cran-comments\.md$
+^_site$
+^pkgdown$

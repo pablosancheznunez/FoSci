@@ -1,0 +1,22 @@
+url: https://pablosancheznunez.com/FoSci/
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#8a1c1c"
+
+authors:
+  Pablo Sánchez-Núñez:
+    href: https://pablosancheznunez.com
+
+home:
+  links:
+  - text: All R packages
+    href: https://pablosancheznunez.com/r-packages/
+  - text: Author website
+    href: https://pablosancheznunez.com
+
+navbar:
+  structure:
+    left: [intro, reference, news]
+    right: [search, github]

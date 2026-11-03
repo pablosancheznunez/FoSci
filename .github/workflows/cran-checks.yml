@@ -1,0 +1,14 @@
+name: CRAN checks
+
+on:
+  schedule:
+    - cron: "0 5 * * 3"
+  workflow_dispatch:
+
+jobs:
+  cran:
+    uses: pablosancheznunez/research-tools-ops/.github/workflows/cran-watch.yml@main
+    permissions:
+      contents: write
+    with:
+      package: FoSci
